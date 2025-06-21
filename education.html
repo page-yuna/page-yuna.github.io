@@ -4,40 +4,8 @@
   <meta charset="UTF-8">
   <title>Education | page.yuna</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <style>
-    body {
-      font-family: 'Pretendard', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 1em;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 50px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
 </head>
 
 <body>
@@ -45,37 +13,43 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="education.html">Education</a>
+    <div class="dropdown">
+        <a href="education.html" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+        <a href="education.html#biomedical">Biomedical</a>
+        <a href="education.html#industrial">Industrial</a>
+        </div>
+    </div>
     <a href="project.html">Project</a>
     <a href="life.html">Life</a>
   </nav>
 
   <section id="education">
-    <h2>🎓 Education</h2>
+    <h1>🎓 Education</h1>
 
     <div class="Biology">
-      <h3>🧪 노화생물학 (Aging Biology) (2025)</h3>
-      <p>Design of Cell Cycle Reprogramming Strategies</p>
-      <p>Design of Immune System Reprogramming Strategies</p>
+      <h2>🧪 노화생물학 (Aging Biology) (2025)</h2>
+      <p><strong>Design of Cell Cycle Reprogramming Strategies</strong></p>
+      <p><strong>Design of Immune System Reprogramming Strategies</strong></p>
       <p>
         - Investigated the interplay between tumor cell cycle control and immune evasion mechanisms, focusing on age-related immune dysfunction.<br><br>
 
-        - Proposed a combinational immunotherapy using <strong>CD56<sup>dim</sup> NK cells</strong> and <strong>uPAR-targeted mut06 CAR-T cells</strong>.<br><br>
+        - Proposed a combinational immunotherapy using CD56<sup>dim</sup> NK cells and uPAR-targeted mut06 CAR-T cells.<br><br>
 
-        - Designed a strategy to maintain <strong>long-term immune surveillance</strong> using <strong>IL-15-expressing CIML NK cells</strong> while minimizing systemic toxicity.<br><br>
+        - Designed a strategy to maintain long-term immune surveillance using IL-15-expressing CIML NK cells while minimizing systemic toxicity.<br><br>
 
-        - Reviewed cutting-edge studies to compare <strong>IL-15 regulation systems</strong> and control mechanisms for <strong>off-target effects</strong> via uPA activity.
+        - Reviewed cutting-edge studies to compare IL-15 regulation systems and control mechanisms for off-target effects via uPA activity.
     </p>
     </div>
 
-    <div class="project">
-      <h3>HiMedi (2024)</h3>
-      <p>🗝️ OCR 및 딥러닝을 활용한 약물 인식, 약물 간 상호작용 경고, 복약 알림 기능 탑재.</p>
+    <div class="Biology">
+      <h2>💻 의생명데이터처리및실습 (Biomedical Data Processing and Lab.) (2023)</h2>
+      <p>🗝️</p>
     </div>
 
-    <div class="project">
-      <h3>면역계 리프로그래밍 review (2025)</h3>
-      <p>🗝️ CAR-T + CIML NK 병용 치료 전략. uPAR-targeting CAR-T, IL-15 지속 발현 기반 설계.</p>
+    <div class="Industrial">
+      <h2>데이터베이스시스템 (2024)</h2>
+      <p>🗝️</p>
     </div>
 
   </section>
