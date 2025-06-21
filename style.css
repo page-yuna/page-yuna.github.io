@@ -93,3 +93,71 @@ h3 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+#projects {
+  padding: 60px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  color: #4b75f5;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-date {
+  color: #4b75f5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.project-company {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-stack,
+.project-features {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.tag-button {
+  display: inline-block;
+  background-color: #eee;
+  color: #222;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.tag-button:hover {
+  background-color: #ddd;
+}

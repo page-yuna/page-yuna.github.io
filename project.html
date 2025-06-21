@@ -12,7 +12,14 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="education.html">Education</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Education</a>
+        <div class="dropdown-content">
+        <a href="education-bmse.html">BMSE</a>
+        <a href="education-ie.html">IE</a>
+        <a href="education-stats.html">STATS</a>
+        </div>
+    </div>
     <a href="project.html">Project</a>
     <a href="life.html">Life</a>
   </nav>
@@ -20,19 +27,19 @@
   <section id="project">
     <h2>🛠 Projects</h2>
 
-    <div class="published">
-      <h3>📄 협동로봇 문제 해결을 위한 검색증강생성 기반 챗봇 서비스 연구 (2025)</h3>
-      <p>🗝️ Keyword: </p>
-    </div>
-
-    <div class="project">
-      <h3>HiMedi (2024)</h3>
-      <p>🗝️ OCR 및 딥러닝을 활용한 약물 인식, 약물 간 상호작용 경고, 복약 알림 기능 탑재.</p>
-    </div>
-
-    <div class="project">
-      <h3>면역계 리프로그래밍 review (2025)</h3>
-      <p>🗝️ CAR-T + CIML NK 병용 치료 전략. uPAR-targeting CAR-T, IL-15 지속 발현 기반 설계.</p>
+    <div class="project-card">
+      <div class="project-icon">💊</div>
+      <div class="project-info">
+        <p class="project-date">2023.01–2024.02</p>
+        <h3 class="project-title">HiMedi</h3>
+        <p class="project-features">
+          <strong>주요 기능:</strong> OCR 및 딥러닝을 활용한 약물 인식, 복약 알림 기능 + 약물 상호작용 (DDI)
+        </p>
+        <div class="project-links">
+          <a href="#" class="tag-button">GITHUB</a>
+          <a href="#" class="tag-button">PPT</a>
+        </div>
+      </div>
     </div>
 
   </section>
