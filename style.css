@@ -161,3 +161,61 @@ h3 {
 .tag-button:hover {
   background-color: #ddd;
 }
+
+
+#education {
+  padding: 40px 20px;
+  font-family: 'Pretendard', sans-serif;
+  color: #2d2d2d;
+}
+
+.card {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-weight: normal;
+  color: #777;
+  font-size: 1rem;
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.coming-soon {
+  color: #aaa;
+  font-style: italic;
+}
