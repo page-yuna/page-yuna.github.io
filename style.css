@@ -1,9 +1,13 @@
+/* 전체 폰트 설정 */
 body {
   font-family: 'Pretendard', sans-serif;
   margin: 0;
   padding: 0;
+  color: #2d2d2d;
+  background-color: #ffffff;
 }
 
+/* 네비게이션 */
 nav {
   background-color: #333;
   padding: 1em;
@@ -11,7 +15,8 @@ nav {
   top: 0;
 }
 
-nav a {
+nav a,
+.dropbtn {
   color: white;
   margin-right: 20px;
   text-decoration: none;
@@ -22,53 +27,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  padding: 50px;
-}
-
-/* h1: 페이지 제목 (제일 상단) */
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #2e2e2e;
-  text-align: center;
-  margin: 60px 0 40px 0;
-  border-bottom: 3px solid #eee;
-  padding-bottom: 10px;
-}
-
-/* h2: 구역 제목 (예: Biomedical, Industrial) */
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  border-left: 5px solid #ccc;
-  padding-left: 15px;
-}
-
-/* h3: 세부 항목 제목 (예: 과목명) */
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #444;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-
-/* 드롭다운 메뉴 */
+/* 드롭다운 */
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.dropbtn {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 20px;
 }
 
 .dropdown-content {
@@ -94,9 +56,95 @@ h3 {
   display: block;
 }
 
+/* section 공통 padding */
+section {
+  padding: 50px;
+}
+
+/* --------------------- Education 페이지 --------------------- */
+
+#education {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* h1: Education 타이틀 */
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2e2e2e;
+  text-align: center;
+  margin: 60px 0 40px 0;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* h2: 분야 (BMSE, IE, etc) */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border-left: 5px solid #ccc;
+  padding-left: 15px;
+}
+
+/* 카드 스타일 (강의 블록) */
+.course-card {
+  background-color: #fafafa;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 36px;
+}
+
+/* h3: 과목명 */
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.year {
+  font-weight: normal;
+  color: #777;
+  font-size: 1rem;
+}
+
+/* h4: 과목 내 세부 주제 */
+h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* 리스트 정리 */
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* 준비 중 표시 */
+.coming-soon {
+  color: #aaa;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* --------------------- Project 등 나머지 섹션 --------------------- */
+
 #projects {
   padding: 60px;
-  font-family: 'Pretendard', sans-serif;
 }
 
 .project-card {
@@ -160,70 +208,4 @@ h3 {
 
 .tag-button:hover {
   background-color: #ddd;
-}
-
-
-#education {
-  padding: 40px 20px;
-  font-family: 'Pretendard', sans-serif;
-  color: #2d2d2d;
-}
-
-.card {
-  background: #fafafa;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 24px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.year {
-  font-weight: normal;
-  color: #777;
-  font-size: 1rem;
-}
-
-h4 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-ul {
-  padding-left: 20px;
-  line-height: 1.7;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-.coming-soon {
-  color: #aaa;
-  font-style: italic;
-}
-
-.course-card {
-  background-color: #fafafa;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 32px;
 }
