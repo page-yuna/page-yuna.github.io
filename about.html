@@ -2,13 +2,16 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>About | page.yuna</title>
+    <title>About Me</title>
+    <!-- CSS 연결 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 네비게이션 -->
     <nav>
-        <a href="index.html" class="logo logo-font">YUNA</a>
-        <div class="menu logo-font">
+        <a href="index.html" class="logo font-cute">YUNA</a>
+        <div class="menu font-cute">
             <a href="about.html" class="active">About</a>
             <a href="education.html">Education</a>
             <a href="project.html">Project</a>
@@ -17,30 +20,63 @@
     </nav>
 
     <div class="container">
-        <h2 class="page-title">About Me</h2>
-        <div class="content-box">
-            <div class="about-grid">
-                <img src="img/profile.jpg" alt="Profile" class="profile-photo">
-                <div>
-                    <h3>🐰 YUNA 🐰</h3>
-                    <br>
-                    <h3>🧠 관심 분야</h3>
-                    <ul>
-                      <li>💡 Cancer Genomics, Proteomics, Bioinformatics</li>
-                      <li>🧬 AI-driven Drug Discovery</li>
-                    </ul>
-                    <br>
-                    <h3>📬 Contact</h3>
-                    <p>
-                      📧 Email: <a href="mailto:lxnx.llxnx@gmail.com">lxnx.llxnx@gmail.com</a><br>
-                      🌐 GitHub: <a href="https://github.com/page-yuna" target="_blank">github.com/page-yuna</a><br>
-                      🔗 LinkedIn: <a href="https://linkedin.com/in/page-yuna" target="_blank">linkedin.com/in/page-yuna</a>
-                    </p>
+        <!-- 타이틀 -->
+        <h2 class="page-title"><span class="font-cute">About Me</span></h2>
+
+        <!-- 프로필 카드 시작 -->
+        <div class="profile-card">
+            
+            <!-- 왼쪽: 사진과 이름 -->
+            <div class="profile-left">
+                <div class="photo-frame">
+                    <!-- 사진이 없으면 귀여운 아이콘이나 색상 박스가 보임 -->
+                    <img src="https://via.placeholder.com/200/FFC4D0/ffffff?text=YUNA" alt="Profile Photo">
+                    <!-- 실제 사진이 있다면: <img src="img/my-photo.jpg" alt="Me"> -->
                 </div>
+                <div class="name-tag font-cute">🐰 YUNA 🐰</div>
+                <p style="font-size:0.9rem; color:#888; margin-top:5px;">Data & Bio-Info Student</p>
+            </div>
+
+            <!-- 오른쪽: 상세 정보 -->
+            <div class="profile-right">
+                
+                <!-- 관심 분야 -->
+                <div class="info-group">
+                    <h3 class="font-cute">🧠 관심 분야</h3>
+                    <div class="tag-container">
+                        <span class="tag">Cancer Genomics</span>
+                        <span class="tag">Proteomics</span>
+                        <span class="tag">Bioinformatics</span>
+                        <span class="tag">AI-driven Drug Discovery</span>
+                    </div>
+                </div>
+
+                <!-- 연락처 -->
+                <div class="info-group">
+                    <h3 class="font-cute">📬 Contact & Channel</h3>
+                    
+                    <a href="mailto:lxnx.llxnx@gmail.com" class="contact-link">
+                        <span class="icon">📧</span> lxnx.llxnx@gmail.com
+                    </a>
+                    
+                    <a href="https://github.com/page-yuna" target="_blank" class="contact-link">
+                        <span class="icon">💻</span> github.com/page-yuna
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/page-yuna" target="_blank" class="contact-link">
+                        <span class="icon">🔗</span> linkedin.com/in/page-yuna
+                    </a>
+                </div>
+
             </div>
         </div>
+        <!-- 프로필 카드 끝 -->
+
     </div>
 
-    <footer>&copy; 2024 Yuna.</footer>
+    <footer>
+        &copy; 2024 Yuna. All rights reserved.
+    </footer>
+
 </body>
 </html>
