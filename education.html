@@ -1,55 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Education | page.yuna</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-</head>
-
-<body>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="project.html">Project & Career</a>
-    <a href="life.html">Life</a>
-  </nav>
-
-  <section id="education">
-    <h2>🎓 Education</h2>
-
-    <a href="education-bmse.html" style="text-decoration: none; color: inherit;">
-      <h3 id="BMSE"> 🧬 Biomedical Science & Engineering</h3>
-    </a>
-
-    <a href="education-ie.html" style="text-decoration: none; color: inherit;">
-      <h3 id="IE"> 🏭 Industrial Engineering</h3>
-    </a>
-
-    <a href="education-stats.html" style="text-decoration: none; color: inherit;">
-      <h3 id="STATS"> 📊 Applied Statistics</h3>
-    </a>
-
-  </section>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
     <meta charset="UTF-8">
     <title>Education | page.yuna</title>
+    <!-- CSS 연결 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 네비게이션 -->
     <nav>
-        <a href="index.html" class="logo logo-font">YUNA</a>
-        <div class="menu logo-font">
+        <a href="index.html" class="logo font-cute">YUNA</a>
+        <div class="menu font-cute">
             <a href="about.html">About</a>
             <a href="education.html" class="active">Education</a>
             <a href="project.html">Project</a>
@@ -58,33 +20,48 @@
     </nav>
 
     <div class="container">
-        <h2 class="page-title">Education</h2>
-        
-        <div class="edu-nav">
-            <a href="education.html" class="edu-btn" style="background:var(--pink); color:white;">All</a>
-            <a href="education-abt.html" class="edu-btn">ABT</a>
-            <a href="education-ie.html" class="edu-btn">IE</a>
-            <a href="education-stats.html" class="edu-btn">Stats</a>
+        <!-- 타이틀 -->
+        <h2 class="page-title"><span class="font-cute">Education</span></h2>
+
+        <div class="tab-container font-cute">
+            <a href="education.html" class="tab-btn active">All</a>
+            <a href="education-bmse.html" class="tab-btn">ABT 🧬</a>
+            <a href="education-ie.html" class="tab-btn">IE 🏭</a>
         </div>
 
-        <div class="content-box">
-            <h3>🎓 Education</h3>
-            <br>
-            <ul class="edu-list">
-                <li>
-                    <strong>Konkuk University</strong> | Seoul, South Korea (2026.03 - )<br>
-                    Major: Stem Cell and Regenerative Biotechnology
-                    <br>
-                </li>
-                <li>
-                    <strong>Konkuk University</strong> | Seoul, South Korea (2021.03 - 2026.02)<br>
-                    Major: Advanced Biotechnology<br>
-                    Double Major: Industrial Engineering<br>
-                </li>
-            </ul>
+        <div class="edu-card">
+            <div class="edu-item">
+                <div class="edu-icon">🧪</div>
+                <div class="edu-content">
+                    <span class="edu-date">2026.03 - (In progress)</span>
+                    <h3 class="font-cute">Konkuk University</h3>
+                    <p class="edu-desc">
+                        Seoul, South Korea<br>
+                        <b>Major:</b> Stem Cell and Regenerative Biotechnology
+                    </p>
+                </div>
+            </div>
+
+            <!-- 학부 학력 -->
+            <div class="edu-item">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-content">
+                    <span class="edu-date">2021.03 - 2026.02</span>
+                    <h3 class="font-cute">Konkuk University</h3>
+                    <p class="edu-desc">
+                        Seoul, South Korea<br>
+                        <b>Major:</b> Advanced Biotechnology<br>
+                        <b>Double Major:</b> Industrial Engineering
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <footer>&copy; 2025 Yuna.</footer>
+    <footer>
+        &copy; 2025 Yuna. All rights reserved.
+    </footer>
+
 </body>
 </html>
