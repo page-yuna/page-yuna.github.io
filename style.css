@@ -1,212 +1,222 @@
-/* 전체 폰트 설정 */
+@charset "utf-8";
+
+/* 폰트 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root {
+    --pink: #FFD1DC;
+    --blue: #C1E1FF;
+    --purple: #E0BBE4;
+    --yellow: #FFF4BD;
+    --text-main: #6B5B95;
+    --text-sub: #887BB0;
+    --white: #ffffff;
+    --bg-gradient: linear-gradient(120deg, #fff1eb 0%, #ace0f9 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Pretendard', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #2d2d2d;
-  background-color: #ffffff;
+    font-family: 'Pretendard', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* 네비게이션 */
+h1, h2, h3, .logo-font {
+    font-family: 'Jua', sans-serif;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* 네비게이션바 */
 nav {
-  background-color: #333;
-  padding: 1em;
-  position: sticky;
-  top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(224, 187, 228, 0.2);
+    border-radius: 0 0 20px 20px;
 }
 
-nav a,
-.dropbtn {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-  font-weight: bold;
+.logo {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    text-shadow: 2px 2px 0 var(--pink);
 }
 
-nav a:hover {
-  text-decoration: underline;
+.menu {
+    display: flex;
+    gap: 20px;
 }
 
-/* 드롭다운 */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.menu a {
+    color: var(--text-sub);
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.1rem;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #444;
-  min-width: 160px;
-  z-index: 1;
+.menu a:hover, .menu a.active {
+    color: var(--text-main);
+    text-shadow: 1px 1px 0 var(--yellow);
 }
 
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* 컨테이너 (본문 영역 제한) */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    flex: 1; /* 푸터 하단 고정용 */
 }
 
-.dropdown-content a:hover {
-  background-color: #666;
+/* 공통 카드 스타일 (하얀색 둥근 박스) */
+.content-box {
+    background: var(--white);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(193, 225, 255, 0.5);
+    margin-bottom: 30px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--text-main);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* section 공통 padding */
-section {
-  padding: 50px;
+.page-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: var(--yellow);
+    position: absolute;
+    bottom: 5px;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.7;
 }
 
-/* --------------------- Education 페이지 --------------------- */
-
-#education {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-sub);
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: auto;
 }
 
-/* h1: Education 타이틀 */
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #2e2e2e;
-  text-align: center;
-  margin: 60px 0 40px 0;
-  border-bottom: 3px solid #eee;
-  padding-bottom: 10px;
+/* [페이지별 스타일] */
+
+/* index.html (홈) */
+.hero-section {
+    text-align: center;
+    padding: 80px 0;
+}
+.hero-title {
+    font-size: 3.5rem;
+    color: var(--white);
+    text-shadow: 3px 3px 0 var(--purple);
+    margin-bottom: 20px;
 }
 
-/* h2: 분야 (BMSE, IE, etc) */
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  border-left: 5px solid #ccc;
-  padding-left: 15px;
+/* about.html */
+.about-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--pink);
+    border: 6px solid var(--white);
+    object-fit: cover;
 }
 
-/* 카드 스타일 (강의 블록) */
-.course-card {
-  background-color: #fafafa;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 36px;
+/* project.html */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
-
-/* h3: 과목명 */
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #444;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.year {
-  font-weight: normal;
-  color: #777;
-  font-size: 1rem;
-}
-
-/* h4: 과목 내 세부 주제 */
-h4 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #444;
-}
-
-/* 리스트 정리 */
-ul {
-  padding-left: 20px;
-  line-height: 1.7;
-  margin-top: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-/* 준비 중 표시 */
-.coming-soon {
-  color: #aaa;
-  font-style: italic;
-  margin-top: 4px;
-}
-
-/* --------------------- Project 등 나머지 섹션 --------------------- */
-
-#projects {
-  padding: 60px;
-}
-
 .project-card {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    border: 2px solid transparent;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue);
 }
 
-.project-icon {
-  font-size: 2.5rem;
-  margin-right: 20px;
-  color: #4b75f5;
+/* education.html */
+.edu-list li {
+    margin-bottom: 20px;
+    border-left: 4px solid var(--purple);
+    padding-left: 20px;
+}
+.edu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.edu-btn {
+    padding: 10px 20px;
+    background: var(--white);
+    border-radius: 20px;
+    color: var(--text-main);
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.edu-btn:hover {
+    background: var(--pink);
+    color: white;
 }
 
-.project-info {
-  flex: 1;
+/* life.html */
+.gallery {
+    column-count: 3;
+    column-gap: 15px;
 }
-
-.project-date {
-  color: #4b75f5;
-  font-weight: bold;
-  margin-bottom: 5px;
+.gallery-item {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    break-inside: avoid;
 }
-
-.project-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 5px 0;
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
 }
-
-.project-company {
-  font-weight: 600;
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+    .about-grid { flex-direction: column; text-align: center; }
+    .gallery { column-count: 1; }
+    nav { padding: 15px; }
+    .menu { gap: 10px; font-size: 0.9rem; }
 }
-
-.project-stack,
-.project-features {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-.project-links {
-  margin-top: 10px;
-}
-
-.tag-button {
-  display: inline-block;
-  background-color: #eee;
-  color: #222;
-  font-size: 0.8rem;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-right: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
-}
-
-.tag-button:hover {
-  background-color: #ddd;
-}
-
