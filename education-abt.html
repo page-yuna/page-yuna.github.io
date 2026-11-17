@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Education | page.yuna</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | page.yuna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html" class="active">Education</a>
-    <a href="project.html">Project & Career</a>
-    <a href="life.html">Life</a>
-  </nav>
+    <nav>
+        <a href="index.html" class="logo font-cute">YUNA</a>
+        <div class="menu">
+            <a href="about.html">About</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="project.html">Project</a>
+            <a href="life.html">Life</a>
+        </div>
+    </nav>
 
-  <section id="education">
-    <h1>🎓 Education</h1>
+    <div class="container">
+        <h2 class="page-title"><span class="font-cute">Education</span></h2>
+        <div class="tab-container">
+            <a href="education.html" class="tab-btn">All</a>
+            <a href="education-abt.html" class="tab-btn active">ABT</a>
+            <a href="education-ie.html" class="tab-btn">IE</a>
+        </div>
 
-    <h2>🧬 Advanced Biotechnology</h2>
+        <h3 class="section-title">🧬 Advanced Biotechnology</h3>
 
-    <div class="course-card">
-      <h3>🧪 노화생물학 (Aging Biology) <span class="year">(2025)</span></h3>
-      <h4>Design of Cell Cycle Reprogramming Strategies</h4>
-      <h4>Design of Immune System Reprogramming Strategies</h4>
-      <ul>
-        <li>Investigated tumor cell cycle control and immune evasion mechanisms in aging-related dysfunction.</li>
-        <li>Proposed combinational immunotherapy using CD56<sub>dim</sub> NK cells and mut06 CAR-T cells.</li>
-        <li>Designed IL-15-expressing CIML NK cell strategies for long-term immune surveillance.</li>
-        <li>Compared IL-15 regulation systems and off-target control via uPA activity.</li>
-      </ul>
+        <div class="course-card">
+          <h3>🧪 노화생물학 (Aging Biology) <span class="year">(2025)</span></h3>
+          <h4>Design of Cell Cycle Reprogramming Strategies</h4>
+          <h4>Design of Immune System Reprogramming Strategies</h4>
+          <ul>
+            <li>Investigated tumor cell cycle control and immune evasion mechanisms in aging-related dysfunction.</li>
+            <li>Proposed combinational immunotherapy using CD56<sub>dim</sub> NK cells and mut06 CAR-T cells.</li>
+            <li>Designed IL-15-expressing CIML NK cell strategies for long-term immune surveillance.</li>
+            <li>Compared IL-15 regulation systems and off-target control via uPA activity.</li>
+          </ul>
+        </div>
+
+        <div class="course-card">
+          <h3>💻 의생명데이터처리및실습 (Biomedical Data Processing and Lab.) <span class="year">(2023)</span></h3>
+          <h4>The Analysis of Genome Sequence Variants</h4>
+          <ul>
+            <li>1) Checking the quality of read sequences</li>
+            <li>2) Trimming read sequences</li>
+            <li>3) Mapping read sequences to reference genome sequences</li>
+            <li class="li-figure"><img src="img/BDPL_1.png" alt="mapping" width="400"></li>
+            <li>4) Calling sequence variants by comparing with reference genome sequences</li>
+            <li class="li-figure"><img src="img/BDPL_2.png" alt="sequence variants" width="400"></li>
+          </ul>
+          <h4>The Analysis of Genome Rearrangements</h4>
+          <ul>
+            <li>1) Checking the quality of read sequences</li>
+            <li>2) Trimming read sequences</li>
+            <li>3) Performing genome assembly</li>
+            <li class="li-figure"><img src="img/BDPL-3.png" alt="assembly" width="800"></li>
+            <li class="li-figure"><img src="img/BDPL-4.png" alt="busco" width="400"></li>
+            <li>4) Analyzing genome rearrangements by comparing with genome sequences of other species</li>
+            <li class="li-figure"><img src="img/BDPL-5.png" alt="rearrangements" width="400"></li>
+          </ul>
+        </div>
+
+  
     </div>
 
-    <div class="course-card">
-      <h3>💻 의생명데이터처리및실습 (Biomedical Data Processing and Lab.) <span class="year">(2023)</span></h3>
-      <h4>The Analysis of Genome Sequence Variants</h4>
-      <ul>
-        <li>1) Checking the quality of read sequences</li>
-        <li>2) Trimming read sequences</li>
-        <li>3) Mapping read sequences to reference genome sequences</li>
-        <img src="img/BDPL_1.png" alt="mapping" width="400">
-        <li>4) Calling sequence variants by comparing with reference genome sequences</li>
-        <img src="img/BDPL_2.png" alt="sequence variants" width="400">
-      </ul>
-      <h4>The Analysis of Genome Rearrangements</h4>
-      <ul>
-        <li>1) Checking the quality of read sequences</li>
-        <li>2) Trimming read sequences</li>
-        <li>3) Performing genome assembly</li>
-        <img src="img/BDPL-3.png" alt="assembly" width="800">
-        <img src="img/BDPL-4.png" alt="busco" width="400">
-        <li>4) Analyzing genome rearrangements by comparing with genome sequences of other species</li>
-        <img src="img/BDPL-5.png" alt="rearrangements" width="400">
-      </ul>
-    </div>
-
-  </section>
+    <footer>
+        &copy; 2026 Yuna. All rights reserved.
+    </footer>
 
 </body>
 </html>
